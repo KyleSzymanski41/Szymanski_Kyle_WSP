@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beerocracy:Search Results</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr.js"></script>
+
+
+</head>
+<body>
+<header>
+    <h1>Beerocracy: Helping you find Brewtopia!</h1>
+
+    <div class="ui-widget">
+        <label for="tags" class="color">Search: </label>
+        <input id="tags">
+        <a href="search.html" class="button round tiny">Go!</a>
+    </div>
+
+</header>
+
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name"></li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+    <section class="top-bar-section">
+        <ul>
+            <li class="active"><a href="index.html">Home</a> </li>
+            <li><a href="#">About the Beerocracy</a> </li>
+            <li class="has-dropdown"><a href="#">Account</a>
+                <ul class="dropdown">
+                    <li class="has-dropdown"><a href="#">Settings</a>
+                        <ul class="dropdown">
+                            <li><a href="Login.html">Login</a></li>
+                            <li class="has-dropdown"><a href="#">Membership</a>
+                                <ul class="dropdown">
+                                    <li><a href="register.html">Sign-Up</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Information</a></li>
+                </ul>
+            </li>
+            <li><a href="bookmarks.html">Brewspot</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="#">Contact Information</a></li>
+        </ul>
+    </section>
+</nav>
+
+<div class="row"> <!-- Main row -->
+    <div class="l-9 columns "> <!-- starting form -->
+        <form>
+            <fieldset>
+                <legend>Search</legend>
+                <div class="row"> <!-- new row -->
+                    <div class="medium-12 columns"> <!-- creating med 12 columns -->
+                        <div class="row collapse"> <!-- creating collapse -->
+                            <div class="medium-9 columns">
+                                <input type="text" placeholder="Enter City, State, or Zip">
+                            </div>
+                            <div class="medium-3 columns">
+                                <a href="results.html" class="button postfix">Search</a>
+                            </div>
+                        </div>  <!-- ending collapse -->
+                    </div> <!-- ending med 12 columns -->
+                </div> <!-- end row -->
+                <ul class="accordion" data-accordion role="tablist"> <!-- creating accordion -->
+                    <li class="accordion-navigation">
+                        <a href="#panel1d" role="tab" id="panel1d-heading" aria-controls="panel1d">Filter search results</a>
+                        <div id="panel1d" class="content" role="tabpanel" aria-labelledby="panel1d-heading">
+                            <div class="row">
+                                <div class="medium-12 columns">
+                                    <label class="color1">Distance
+                                        <select>
+                                            <option value="5">5mi</option>
+                                            <option value="10">10mi</option>
+                                            <option value="15">15mi</option>
+                                            <option value="20">20mi</option>
+                                            <option value="25">25mi</option>
+                                            <option value="50">50mi</option>
+                                        </select>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row"> <!-- creating row -->
+                                <div class="large-12 columns"><!-- creating lg 12 columns -->
+                                    <label class="color1">Brewery Type:</label>
+                                    <input type="radio" name="Beer" value="Craft" id="Cbeer"><label for="Cbeer" class="color1">Craft</label>
+                                    <input type="radio" name="Beer" value="Domestic" id="Dbeer"><label for="Dbeer" class="color1">Domestic</label>
+                                </div><!-- ending med 12 columns -->
+                            </div>
+                            <div class="row"> <!-- creating row -->
+                                <div class="large-12 columns"> <!-- creating med 12 columns -->
+                                    <label class="color1">Brewery Tour Availabe:</label>
+                                    <input type="radio" name="Beer" value="yt" id="tour"><label for="tour" class="color1">Yes</label>
+                                    <input type="radio" name="Beer" value="nt" id="notour"><label for="notour" class="color1">No</label>
+                                </div> <!-- ending med 12 columns -->
+                            </div> <!-- ending row -->
+
+                        </div>
+                    </li>
+                </ul> <!-- ending accordion -->
+
+            </fieldset>
+        </form> <!-- Ending form -->
+    </div> <!-- end class l-9 columns-->
+</div> <!-- End Main row -->
+
+<div class="row">
+    <article class="medium-8  columns result">
+        <h2>Results for Fort Collins CO</h2>
+            <p><img src="img/newbelguim_thumb.jpg" alt="New Belgium" class="left"><a href="brewery.html"><strong>New Belgium Brewing Company</strong></a><br>
+                Address: 500 Linden St<br> Fort Collins, CO 80524<br>Telephone:(970) 221-0524 <br> Website: <a href="https://www.newbelgium.com">www.newbelgium.com</a>
+            </p><br>
+            <p><img src="img/odell_thumb.jpg" alt="Odell Brewery" class="left"><a href="#"><strong>Odell Brewery</strong></a><br>
+                Address: 800 E Lincoln Ave<br> Fort Collins, CO 80524<br><br> Telephone: (970) 498-9070<br> Website: <a href="https://www.odellbrewing.com">www.odellbrewing.com</a>
+            </p><br>
+        <p><img src="img/ab_inbev_thumb.jpg" alt="Budweiser" class="left"><a href="#"><strong>Budweiser</strong></a><br>
+            Address: 2351 Busch Dr,<br> Fort Collins, CO 80524<br><br> Telephone: (970) 490-4691<br> Website: <a href="https://www.budweiser.com">www.budweiser.com</a>
+        </p><br>
+        <p><img src="img/lefthandb_thumb.jpg" alt="Lefthand Brewery"  class="left"><a href="#"><strong>Left Hand Brewery</strong></a><br>
+            Address: 1265 Boston Ave,<br> Longmont, CO 80501<br><br> Telephone: (303) 772-0258<br> Website: <a href="https://www.lefthandbrewing.com">www.lefthandbrewing.com</a>
+        </p><br>
+    </article>
+    <aside class="medium-3  columns topspace">
+        <p>Use the following map to locate the brewery of your choice.</p>
+            <div id="map-canvas"></div><br>
+                <p>If you are enjoying our site, why don't you sign-up to be a member. As a member you will have the ability to save the breweries you like to our "Brewspot" for future reference, as well as get a newsletter every month with brewery news. This could include new breweries being open in your area! The best part about our service is it's free! to sign-up click on the register button below!</p>
+             <p><a href="register.html" class="button round tiny">Register &gt;&gt;</a></p>
+    </aside>
+</div>
+<footer class="row">
+    <div class="large-12 columns text-center">
+        <p>Beerocracy Brewery Finder •
+            1036 Blue Spruce Dr. Loveland CO 80538 </p> <p>Phone: XXX-XXX-XXXX • about@Beerocracy.com • www.Beerocracy.com</p>
+    </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<!-- plugins -->
+<script type="text/javascript" src="js/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    $(document).foundation({
+
+        orbit: {
+            animation: 'fade',
+            timer_speed: 2000,
+            bullets: false
+        }
+    });
+</script>
+
+</body>
+</html>
