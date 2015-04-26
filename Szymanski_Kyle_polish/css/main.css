@@ -1,0 +1,241 @@
+html{
+    width: 100%;
+    background-color: #fff;
+}
+
+body{
+    width: 100%;
+}
+/* header styles */
+header{
+
+    background:#910;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    overflow: hidden;
+    border-bottom: 1px solid #000000;
+
+}
+
+
+
+header h1 {
+    font-size: 2.6em;
+    font-family: 'PT Serif', serif;
+    padding-left: 1%;
+    line-height: 1em;
+    float: left;
+    color: #fff;
+    margin-left: 1%;
+    display: inline;
+
+
+}
+
+p{
+    font-family: 'Muli', sans-serif;
+}
+/* Nav styling */
+
+
+
+.top-bar {
+    background:#333333;
+    padding-bottom: 2em;
+}
+
+.top-bar-section li  {
+    background: #555555!important;
+}
+
+.top-bar-section li a:hover {
+    background: #888888 !important;
+}
+
+.top-bar-section ul li.active > a {
+    background: #910 !important;
+}
+
+.top-bar-section ul li.active > a:hover {
+    background: #910 !important;
+}
+/* button styles */
+.button {
+    background-color: gray;
+    border-color: #000;
+    color: #fff;
+}
+.button:hover, .button:focus {
+    background-color: #910;
+    color: #FFFFFF;
+}
+
+/* header styles */
+header h2 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: normal;
+    padding-top: .4em;
+}
+h2, h3, h4, h5, h6 {
+    color: #910;
+    font-family: Georgia, serif
+}
+
+/* article styles */
+article {
+    padding: 4em 1em 5em 0;
+
+}
+article .left {
+    padding: 0 1em 1em 0;
+}
+article .right {
+    padding: 0 1em 2em 1em;
+}
+
+/* creating padding for aside class */
+.topspace {
+    padding-top: 5em;
+    padding-bottom: 3em;
+}
+.topspace p {
+    font-size: 0.8em;
+    color: #999;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+/* creating footer */
+
+footer {
+    padding: 3em 0;
+    color: #999;
+    border-top: 1px solid #000;
+}
+footer p {
+    font-size: 0.8em;
+}
+/* creating class bearlogo for padding  */
+.bearlogo img{
+    padding: 2em;
+   }
+.bearlogo h2{
+    border-bottom: 1px solid #000;
+    padding-bottom: .5em;
+    padding-top: 1em;
+}
+
+.bearlogo p {
+    text-align: center;
+}
+/* search widget */
+.ui-widget{
+    float: right;
+    padding-right: 1em;
+}
+/* label style */
+label{
+
+    display: inline;
+    padding: 2px;
+}
+
+label.color{
+    color: #fff;
+}
+
+label.color1{
+    color: #910;
+}
+/* search style */
+.search{
+    padding-top: 8em;
+}
+
+.panelId{
+    background-color: #000101;
+}
+
+article.result p{
+    border-bottom: 1px solid #000;
+    padding-bottom: 2em;
+}
+/* google maps */
+#map-canvas {
+    width: 250px;
+    height: 300px;
+    padding-bottom: 2em;
+}
+/* adjusting orbit */
+.orbit-container{
+    width: 80% !important;
+    margin-bottom: 1em;
+    }
+
+.register{
+    padding-top: 2em;
+}
+
+
+/*
+Minimalist Reset 1
+CSSresetr.com
+*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.contain{
+    padding-right: 4.3em;
+}
+
+.test{
+    text-align: center;
+    border-bottom: 1px solid #000;
+    margin-bottom: 2.2em;
+}
+
+.quote{
+    border-radius: 2px;
+    padding: 2em;
+    margin-bottom: 2.2em;
+    border: 1px solid #000;
+    
+}
+
+.quote{
+    overflow: auto;
+}
+
+.quote p{
+    margin-top: 1.1em;
+    text-align: center;
+    color: #910;
+}
+
+.quote small {
+    text-align: right;
+    font-weight: bold;
+    color: #910;
+    float: right;
+    font-family: cursive;
+    
+}
+
+
+.rounds {
+height: 90px;
+width: 90px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+    
+}
+
+
+.small-block-grid li{
+    padding: .5em !impotant;
+}

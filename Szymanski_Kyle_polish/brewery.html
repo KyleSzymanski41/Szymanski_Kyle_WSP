@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beerocracy:Brewery results</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Serif|Muli">
+
+
+    <script src="js/vendor/modernizr.js"></script>
+
+
+</head>
+<body>
+<header>
+    <h1>Beerocracy: Helping you find Brewtopia!</h1>
+
+   <div class="ui-widget">
+            <label for="tags" class="color">Search: </label>
+            <input id="tags">
+            <a href="results.html" class="button tiny">Go!</a><br>
+            <a href="login.html" class="button round tiny">Login</a>
+            <a href="register.html" class="button round tiny">Sign-up</a>
+        </div>
+</header>
+
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name"></li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+    <section class="top-bar-section">
+        <ul>
+            <li class="active"><a href="index.html">Home</a> </li>
+            <li><a href="#">About the Beerocracy</a> </li>
+            <li class="has-dropdown"><a href="#">Account</a>
+                <ul class="dropdown">
+                    <li class="has-dropdown"><a href="#">Settings</a>
+                        <ul class="dropdown">
+                            <li><a href="login.html">Login</a></li>
+                            <li class="has-dropdown"><a href="#">Membership</a>
+                                <ul class="dropdown">
+                                    <li><a href="register.html">Sign-Up</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Information</a></li>
+                </ul>
+            </li>
+            <li><a href="bookmarks.html">Brewspot</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="#">Contact Information</a></li>
+        </ul>
+    </section>
+</nav>
+
+
+
+<div class="row">
+    <article class="medium-9  columns">
+        <h2>New Belgium Brewery</h2>
+        <p><img src="img/newbelguim_thumb.jpg" alt="Brewery of New Belgium" class="left">Located in the Old Town section of Fort Collins Colorado, New Belgium has been on of the truly great start up stories for craft beer. Current CEO Kim Jordan and her ex-husband Jim Lebesch started New belgium as a commercial business in 1991. This is not how it originally started. Jim Lebesch was traveling through Belgium via a fat tire bike during the late 80's when he had a dream to bring the knowledge of Belgium brewing back to the state of Colorado. Jim and his wife started brewing in their basement, perfecting their skill before they ran out of room to store the newly brewed beer. This lead them to open up the brewery, and since that time in Belgium, on a fat tire bicycle, the craft industry has never looked back. </p>
+        <p>New Belgium is an employee owned company who take pride in the beer the brew. Doing local collaborations with neighboring breweries, or coming up with a new brew, this company is staying ahead of the competition. To find out more information on New Belgium Brewery, please feel free to visit their website!</p><br>
+
+       <div class="orbit-container">
+        <h2>Photo Gallery of New Belgium</h2>
+        <ul data-orbit> <!-- creating photo gallery using orbit -->
+            <li>
+                <img src="img/newbelguim_1.jpg" alt="brewery of New Belgium">
+                <div class="orbit-caption">
+                    <p>Building</p>
+                </div>
+            </li>
+            <li>
+                <img src="img/newbelgiumbottleline_1.jpg" alt="Bottle line">
+                <div class="orbit-caption">
+                    <p>Bottle Line</p>
+                </div>
+            </li>
+
+        </ul> <!-- ending gallery -->
+    </div>
+    <div class="row">
+        <h2>Share!</h2>
+            <ul class="small-block-grid-3">
+                <li><a href="#"><img src="img/facebook_1_1.jpg" alt="facebook"></a>
+                </li>
+                <li><a href="#"><img src="img/twitter_1.jpg" alt="twitter"></a></li>
+                <li><a href="#"><img src="img/insta_1.jpg" alt="instagram"></a></li>
+            </ul>
+     </div>
+
+    </article>
+    <aside class="medium-2  columns topspace">
+        <p>The following information contains contact, location, website, and other details about the brewery.</p>
+        <p>Use the following map to locate the brewery of your choice.</p>
+            <div id="map-canvas"></div><br>
+
+             <ul class="small-block-grid-2 medium-block-grid-1">
+                 <li>Website:<a href="http://www.newbelgium.com"> http://newbelgium.com/</a></li>
+                 <li>Location: 500 Linden St
+                  Fort Collins, CO 80524</li>
+                 <li>Telephone:<br> (970) 221-0524</li>
+                 <li>Brewery Type: Craft</li>
+                 <li>Tours Offered: Yes</li>
+                 <li>Tour Information: call (970) 221-0524</li>
+             </ul>
+        <p> If you are a member use the button below to save to your Brewspot for future viewing. If you are not a member, feel free to register!</p>
+        <p><a href="bookmarks.html" class="button round tiny">Save &gt;&gt;</a> <br> <a href="register.html" class="button round tiny">Register &gt;&gt;</a></p>
+    </aside>
+
+
+</div>
+
+<footer class="row">
+    <div class="large-12 columns text-center">
+        <p>Beerocracy Brewery Finder •
+            1036 Blue Spruce Dr. Loveland CO 80538 </p> <p>Phone: XXX-XXX-XXXX • about@Beerocracy.com • www.Beerocracy.com</p>
+    </div>
+</footer>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- plugins -->
+<script type="text/javascript" src="js/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    $(document).foundation({
+
+        orbit: {
+            animation: 'fade',
+            timer_speed: 2000,
+            bullets: false
+        }
+    });
+</script>
+
+</body>
+</html>
