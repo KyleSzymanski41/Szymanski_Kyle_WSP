@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beerocracy: Search</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Serif|Muli">
+
+
+    <script src="js/vendor/modernizr.js"></script>
+
+
+</head>
+<body>
+<header>
+    <h1>Beerocracy: Helping you find Brewtopia!</h1>
+
+    <div class="ui-widget show-for-large-up">
+        <label for="tags" class="color">Search: </label>
+        <input id="tags">
+        <a href="results.html" class="tiny button">Go!</a> <br>
+    </div>
+
+
+</header>
+
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name"></li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+    <section class="top-bar-section">
+        <ul>
+            <li class="active"><a href="index.html">Home</a> </li>
+            <li><a href="#">About the Beerocracy</a> </li>
+            <li class="has-dropdown"><a href="#">Account</a>
+                <ul class="dropdown">
+                    <li class="has-dropdown"><a href="#">Settings</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Information</a></li>
+                            <li class="has-dropdown"><a href="#">Membership</a>
+                                <ul class="dropdown">
+                                    <li><a href="register.html">Sign-Up</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+            <li><a href="bookmarks.html">Brewspot</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="#">Contact Information</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </section>
+</nav>
+
+<div class="row">
+    <article class="medium-8 columns">
+        <h2>Welcome Back! Sign-in below</h2>
+        <form class="register"> <!-- form created -->
+            <div class="row">  <!-- row created -->
+                <div class="medium-8 columns">
+                    <label>Username:
+                        <input type="text" placeholder="Enter your Username" />
+                    </label>
+                </div>
+            </div>  <!-- row ended -->
+            <div class="row"> <!-- row created -->
+                <div class="medium-4 columns">
+                    <label>Enter Password
+                        <input type="password" placeholder= ******* required>
+                    </label>
+                </div>
+            </div>  <!-- row ended -->
+            <div class="row"> <!-- row created -->
+                <div class="medium-5 columns">
+                    <label>Remember Username and Password?</label>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Yes</label>
+                    <input id="checkbox2" type="checkbox"><label for="checkbox2">No</label>
+
+                    <p><a href="index.html" class="button round tiny" >Login &gt;&gt;</a></p>
+                </div>
+            </div> <!--row ended -->
+
+        </form>  <!-- form ended -->
+
+    </article>
+
+
+    <aside class="medium-4  columns topspace">
+        <p>As a member of our website you the user will be able to explore options within your profile. This will include the "Brewspot" our version of a bookmark tool. As our site keeps update we will soon be adding multiple share functions.</p>
+
+        <p> Not a member? Just sign up for free to gain access the member only content!</p>
+        <p><a href="register.html" class="button round tiny">Register &gt;&gt;</a></p>
+    </aside>
+</div>
+
+<footer class="row">
+    <div class="large-12 columns text-center">
+        <p>Beerocracy Brewery Finder •
+            1036 Blue Spruce Dr. Loveland CO 80538 </p> <p>Phone: XXX-XXX-XXXX • about@Beerocracy.com • www.Beerocracy.com</p>
+    </div>
+</footer>
+
+<footer class="row">
+    <div class="large-12 columns text-center">
+        <p>Beerocracy Brewery Finder •
+            1036 Blue Spruce Dr. Loveland CO 80538 </p> <p>Phone: XXX-XXX-XXXX • about@Beerocracy.com • www.Beerocracy.com</p>
+    </div>
+</footer>
+
+<!-- Scripts -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+
+<!-- plugins -->
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    $(document).foundation({
+
+        orbit: {
+            animation: 'fade',
+            timer_speed: 2000,
+            bullets: false
+        }
+    });
+</script>
+
+</body>
+</html>
